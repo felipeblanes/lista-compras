@@ -1,0 +1,12 @@
+
+<ul>
+  <li *ngFor="let item of itens" [ngClass]="{ 'riscado': item.comprado == true }">
+    Descricao: {{item.nome}}, Quantidade: {{item.quantidade}}, Valor Unitário: {{item.valor}}
+    <button class="btn btn-secondary" (click)="apagar(item)" [ngClass]="{ 'apagado': item.comprado == true }">Já Comprei!</button>
+  </li>
+</ul>
+
+<br>
+<br>
+<br>
+<button class="btn btn-primary" (click)="trocarPagina()">Voltar</button>

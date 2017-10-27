@@ -1,0 +1,16 @@
+div{
+
+  background-color: lightpink;
+  display: block;
+  color: white;
+}
+
+
+:host{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: lightpink;
+  padding: 10px 5%;
+  color: white;
+}
